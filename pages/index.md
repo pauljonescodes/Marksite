@@ -1,18 +1,14 @@
-# Paul Jones' Academic Homepage #
+# Your Marksite Webpage #
 
-## Biography ##
+## Your subheader 1 ##
 
-- I am a [Computer Science](http://cs.rutgers.edu) and [Philosophy](http://philosophy.rutgers.edu) undergraduate at [Rutgers New Brunswick](http://nb.rutgers.edu). 
-- I work as a [Web Development Intern at Local Wisdom Inc.](http://www.localwisdom.com/blog/people/pjones/), where I work primarily with Objective-C for iOS.
-- I earned an Associate's Degree in Liberal Arts from [Mercer County Community College](http://mccc.edu) where I graduated [quite early](http://www.mccc.edu/~humphrew/whatsnew/alumpauljones.htm).
-- I am interested in enrolling in a graduate program centered around neuroscience and philosophy of mind.
+Making a website is easy.
 
-## Contact ##
+## Your subheader 3 ##
 
-- Email: <a href="mailto:paul.jones@rutgers.edu">paul.jones@rutgers.edu</a>
-- Resume: [Paul Jones](./media/paul_jones_resume.pdf)
+You can email me for support: <a href="mailto:paul.jones@rutgers.edu">paul.jones@rutgers.edu</a>
 
-## Social ##
+## Check me out ##
 
 - Facebook: [paulmmj](https://www.facebook.com/paulmmj)
 - Twitter: [@PLJNS](https://twitter.com/PLJNS)
