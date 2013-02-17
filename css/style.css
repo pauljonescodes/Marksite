@@ -1,0 +1,142 @@
+
+
+html {
+	background-color: transparent;
+}
+
+body {
+font-family:"Helvetica Neue Light", Helvetica, Arial, sans-serif;
+color:#424242;	
+background-image: url(../img/RU_INF_SEAL_CMYK.jpg);
+background-repeat: no-repeat;
+background-size: 77%;
+background-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+color: white;
+background-color: #5f6a72; 
+
+background-image: -moz-linear-gradient(top, #5f6a72, #303539);
+  background-image: -ms-linear-gradient(top, #5f6a72, #303539);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5f6a72), to(#303539));
+  background-image: -webkit-linear-gradient(top, #5f6a72,#303539);
+  background-image: -o-linear-gradient(top, #5f6a72, #303539);
+  background-image: linear-gradient(top, #5f6a72, #303539);
+  background-repeat: repeat-x;
+
+text-shadow: 0 2px 0 black;
+}
+
+.nav-list > li > a:hover {
+
+color:white;
+	text-shadow: 0 2px 0 black;
+	background-color: #5f6a72; 
+
+background-image: -moz-linear-gradient(top, #5f6a72, #303539);
+  background-image: -ms-linear-gradient(top, #5f6a72, #303539);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5f6a72), to(#303539));
+  background-image: -webkit-linear-gradient(top, #5f6a72,#303539);
+  background-image: -o-linear-gradient(top, #5f6a72, #303539);
+  background-image: linear-gradient(top, #5f6a72, #303539);
+  background-repeat: repeat-x;
+}
+
+.navbar-inner .brand {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:white;
+	text-shadow: 0 2px 0 black;
+}
+
+.navbar-inner {
+  background-color: #d21034; /* fallback color, place your own */
+
+border: 0px solid #d4d4d4;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+
+  /* Gradients for modern browsers, replace as you see fit */
+  background-image: -moz-linear-gradient(top, #d21034, #a30c28);
+  background-image: -ms-linear-gradient(top, #d21034, #a30c28);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d21034), to(#a30c28));
+  background-image: -webkit-linear-gradient(top, #d21034,#a30c28);
+  background-image: -o-linear-gradient(top, #d21034, #a30c28);
+  background-image: linear-gradient(top, #d21034, #a30c28);
+  background-repeat: repeat-x;
+
+  /* IE8-9 gradient filter */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+	background-color: #d21034;
+ background-image: -moz-linear-gradient(top, #d21034, #a30c28);
+  background-image: -ms-linear-gradient(top, #d21034, #a30c28);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d21034), to(#a30c28));
+  background-image: -webkit-linear-gradient(top, #d21034,#a30c28);
+  background-image: -o-linear-gradient(top, #d21034, #a30c28);
+  background-image: linear-gradient(top, #d21034, #a30c28);
+  background-repeat: repeat-x;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+ background-color: #d21034;
+ background-image: -moz-linear-gradient(top, #d21034, #a30c28);
+  background-image: -ms-linear-gradient(top, #d21034, #a30c28);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d21034), to(#a30c28));
+  background-image: -webkit-linear-gradient(top, #d21034,#a30c28);
+  background-image: -o-linear-gradient(top, #d21034, #a30c28);
+  background-image: linear-gradient(top, #d21034, #a30c28);
+  background-repeat: repeat-x;
+}
+
+.navbar .nav > li > a {
+color: white;
+text-shadow: 0 2px 0 black;
+}
+
+.navbar .nav > li > a:hover {
+color: white;
+text-shadow: 0 2px 0 black;
+}
+
+article {
+display:block;
+border:1px solid #ccc;
+background-color:#F5F5F5;
+font-family:"Helvetica Neue Light", Helvetica, Arial, sans-serif;
+font-size:15px;
+line-height:1.25;
+margin-bottom:0;
+min-height:100%;
+padding-bottom:0;
+padding-left:14px;
+padding-right:14px;
+position:relative;
+zoom:1;
+
+
+}
+
+blockquote p {
+font-style:italic;
+line-height:1.5em;
+font-size: 15px;
+}
+
+a {
+-webkit-transition:color .2s ease-in-out;
+color:#d21034;
+}
+
+a:hover {
+
+color:#a30c28;
+
+}
