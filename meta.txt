@@ -1,4 +1,4 @@
-title:Paul Jones at Rutgers University
-keywords:Rutgers,Computer science,Philosophy
-author:Paul Jones
-description:Paul Jones is a Computer Science and Philosophy undergraduate at Rutgers New Brunswick. He works as a Web Development Intern for Local Wisdom Inc., where he works primarily with Objective-C for iOS. He earned an Associate's Degree in Liberal Arts from Mercer County Community College. He is interested in enrolling in a graduate program centered around neuroscience and philosophy of mind.
+title:Your website title
+keywords:Marksite
+author:paulmmj on GitHub
+description:Describe your content! On one line.
