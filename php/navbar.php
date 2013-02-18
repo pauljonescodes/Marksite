@@ -50,12 +50,10 @@ if ($handle = opendir('./pages')) {
         }
     }
     closedir($handle);
-
 	//echo '<li><a href="?page=blog">Blog</a></li>';
 }
 
 ?>
-
 				</ul>
 			</div>
 		</div>

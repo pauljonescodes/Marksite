@@ -4,7 +4,7 @@ I find writing HTML tedious.
 
 I like writing notes, however, and I believe in free and open courseware.
 
-This is my lightweight CMS to publish notes.
+This is my lightweight CMS to publish notes. Check out <a href = "http://www.eden.rutgers.edu/~pmj34">my site</a>.
 
 ## Features
 

@@ -1,6 +1,9 @@
 	<footer id="footer">
-			<p style="margin-left:10px;margin-top:10px;"><a href = "https://github.com/paulmmj/Rutgers-University-Notes">Note source files</a> | <a href="https://github.com/paulmmj/Marksite">Website engine</a></p>
-			<p style="text-align:center;vertical-align:middle;"></p>
+			<p><a href = "https://github.com/paulmmj/Rutgers-University-Notes">Note source files</a> |
+			<a href="https://github.com/paulmmj/Marksite">Website engine</a> | 
+			<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
+			<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a>
+			</p>
 	</footer>
 
 <script>
