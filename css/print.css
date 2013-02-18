@@ -1,0 +1,61 @@
+.navbar-inner {
+	display:none;
+}
+
+article {
+	min-width: 100%;
+	border: 0px;
+}
+
+#toc {
+	display: none;
+}
+
+#footer {
+	display:none;
+}
+
+code {
+	border: none;
+}
+
+body, #content, #container {
+   width: 100%;
+   margin: 0;
+   float: none;
+   background: #fff url(none);
+}
+
+/* SECTION 2: Remove any elements not needed in print. 
+   This would include navigation, ads, sidebars, etc. */
+#topnav, #navbar, #nav, #sidebar, .ad, .noprint {
+   display: none; 
+}
+
+/* SECTION 3: Set body font face, size, and color.
+   Consider using a serif font for readability. */
+body {
+   font: 1em Georgia, "Times New Roman", Times, serif;
+   color: #000; 
+}
+
+/* SECTION 4: Set heading font face, sizes, and color.
+   Diffrentiate your headings from your body text.
+   Perhaps use a large sans-serif for distinction. */
+h1 { font-size: 250%; }
+h2 { font-size: 175%; }
+h3 { font-size: 135%; }
+h4 { font-size: 100%; font-variant: small-caps; }
+h5 { font-size: 100%; }
+h6 { font-size: 90%; font-style: italic; }
+
+/* SECTION 5: Make hyperlinks more usable.
+   Ensure links are underlined, and consider appending
+   the URL to the end of the link for usability. */
+a:link, a:visited {
+   color: #00c;
+   font-weight: bold;
+   text-decoration: underline; }
+#content a:link:after, #content a:visited:after {
+   content: " (" attr(href) ") ";
+}

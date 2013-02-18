@@ -56,5 +56,6 @@
 /* Twitter Bootstrap Override Style */
 .nav-list > li > a {
     padding: 0px;
+    padding-left: 20px;
 }
 
