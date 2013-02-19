@@ -27,7 +27,6 @@
 <link href="css/style.css" type="text/css" rel="stylesheet" title="default">
 <link href="css/night.css" type="text/css" rel="stylesheet" title="alternate">
 
-
 <link href="img/fav.ico" rel="shortcut icon" />
 <link rel="apple-touch-icon" href="img/apple-touch/icon.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch/icon-ipad.png" />

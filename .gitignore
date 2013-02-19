@@ -1,5 +1,11 @@
 ./pages/*
 
+./img/startup.png
+./img/RU_INF_SEAL_CMYK.jpg
+
+./meta.txt
+
+
 # Compiled source #
 ###################
 *.com
