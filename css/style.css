@@ -143,16 +143,6 @@ padding-right:19px;
 padding-top: 4px;
 padding-bottom:4px;
 position:relative;
-zoom:1;
-
-background-image: -moz-linear-gradient(top, #eff0f0, #dfe1e2);
-  background-image: -ms-linear-gradient(top, #eff0f0, #dfe1e2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eff0f0), to(#dfe1e2));
-  background-image: -webkit-linear-gradient(top, #eff0f0,#dfe1e2);
-  background-image: -o-linear-gradient(top, #eff0f0, #dfe1e2);
-  background-image: linear-gradient(top, #eff0f0, #dfe1e2);
-  background-repeat: repeat-x;
-
 }
 
 article p {
