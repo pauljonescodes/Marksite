@@ -1,6 +1,6 @@
 	<footer id="footer">
-			<p><a href = "https://github.com/paulmmj/Rutgers-University-Notes">Note source files</a> |
-			<a href="https://github.com/paulmmj/Marksite">Website engine</a> | 
+			<p><a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
+			<a href="https://github.com/pljns/Marksite">Website engine</a> | 
 			<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
 			<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a>
 			</p>
@@ -27,3 +27,10 @@ $(function() {
 </script>
 
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script>
+$("h2").click(function() {
+    var section_idx = parseInt($(this).get(0).id.replace( /section_(\d+)/, "$1" ));
+    wm_toggle_section( section_idx );
+  })
+</script>

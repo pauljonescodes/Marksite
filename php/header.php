@@ -19,13 +19,14 @@
 <script src="js/vendor/bootstrap.js" type="text/javascript"></script>
 
 <link href="css/main.css" type="text/css" rel="stylesheet">
-<link href="css/normalize.css" type="text/css" rel="stylesheet">
 <link href="css/bootstrap.min.css" media="screen" type="text/css" rel="stylesheet">
 <link href="css/bootstrap-responsive.min.css" type = "text/css" rel="stylesheet">
+<link href="css/normalize.css" type="text/css" rel="stylesheet">
 <link href="css/jquery.tocify.css" type="text/css" rel="stylesheet">
-<link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
 <link href="css/style.css" type="text/css" rel="stylesheet" title="default">
 <link href="css/night.css" type="text/css" rel="stylesheet" title="alternate">
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
+
 
 <link href="img/fav.ico" rel="shortcut icon" />
 <link rel="apple-touch-icon" href="img/apple-touch/icon.png" />

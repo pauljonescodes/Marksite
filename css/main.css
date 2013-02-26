@@ -247,7 +247,7 @@ textarea {
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        /*content: " (" attr(href) ")"; Disabled because who wants to see links?*/
     }
 
     abbr[title]:after {

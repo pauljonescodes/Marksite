@@ -5,6 +5,10 @@
 
 ./meta.txt
 
+# My note files #
+#################
+
+*.md
 
 # Compiled source #
 ###################
