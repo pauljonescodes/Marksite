@@ -37,9 +37,16 @@
 				
 					$page      = file_get_contents($file);
 					$json_page = $json->encode($page); 
-					
+				
 					echo '<div class="row-fluid">';
 					echo "<article class='span9'>";
+					
+				?>	
+					
+					<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Hello!</strong> I'm currently doing some development work on the site. Please excuse any interruption. - Paul. </div>
+				<?php	
 					echo "<script type='text/javascript'>";
 					echo "var page = $json_page;";
 					echo "var converter = new Markdown.Converter();";

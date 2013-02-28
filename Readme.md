@@ -20,3 +20,6 @@ This is my lightweight CMS to publish notes. Check out <a href = "http://www.ede
 - Download the source
 - Load it on your server
 - Add Markdown files to `/pages`
+
+### For Rutgers
+

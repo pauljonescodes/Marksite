@@ -50,10 +50,34 @@ if ($handle = opendir('./pages')) {
         }
     }
     closedir($handle);
-	//echo '<li><a href="?page=blog">Blog</a></li>';
+	
+	// echo print_nav_bar("./pages/");
 }
-
 ?>
+
 				</ul>
 			</div>
 		</div>
+		
+<?php
+
+function print_nav_bar($file_name) {
+	if ($file_handle = opendir($file_name)) { /* if it opens */
+		while (false !== ($current_entry = readdir($file_handle))) { /* while there are entries */
+        	if ($current_entry != "." && $current_entry != ".." && $current_entry != "index.md") { /* that don't equal this stuff */
+        		if (is_dir($file_name . $current_entry)) { /* perform this if it's a directory */
+        			echo '<li class="dropdown">';
+        			echo '<a class="dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="#">' . $current_entry . '<b class="caret"></b></a>';
+        			echo '<ul class="dropdown-menu">';
+        			print_nav_bar($file_name . "/" . $current_entry);
+        			echo '</ul>';
+        			echo '</li>';
+        		} else {
+	        		echo '<li><a href="?page=' . rawurlencode(substr($file_name, 7) . '/' .$current_entry) . ' ">' . ucwords(basename("./pages/" . $current_entry, ".md")) . '</a></li>';
+        		}
+        	}
+        }
+	}
+}
+
+?>
