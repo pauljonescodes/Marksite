@@ -23,3 +23,4 @@ This is my lightweight CMS to publish notes. Check out <a href = "http://www.ede
 
 ### For Rutgers
 
+- Rutgers

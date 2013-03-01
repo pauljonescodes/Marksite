@@ -4,13 +4,13 @@
 
 	<?php include_once("./php/header.php"); 
 
-			$file = "";
+	$file = "";
 		
-		if (empty($_GET)) {
-		    $file = "./pages/index.md";
-		} else {
-		    $file = './pages/' . $_GET['page'];
-		}
+	if (empty($_GET)) {
+	    $file = "./pages/index.md";
+	} else {
+	    $file = './pages/' . $_GET['page'];
+	}
 
 	$pagename = ucwords(basename("./pages/" . $file, ".md"));
 	$sitename = substr($lines[0], 6);
@@ -37,21 +37,16 @@
 				<?php 
 				
 					$page      = file_get_contents($file);
-					$json_page = $json->encode($page); 
-				
+					$json_page = $json->encode($page);
+						
 					echo '<div class="row-fluid">';
 					echo "<article class='span9'>";
-					
-				?>	
-					
-
-				<?php	
-					echo "<script type='text/javascript'>";
+					echo '<script type="text/javascript">';
 					echo "var page = $json_page;";
-					echo "var converter = new Markdown.Converter();";
-					echo "document.write(converter.makeHtml(page));";
-					echo "</script>";
-					echo "</article>";
+					echo 'var converter = new Markdown.Converter();';
+					echo 'document.write(converter.makeHtml(page));';
+					echo '</script>';
+					echo '</article>';
 					
 					echo '<div class="span3 scrollable visible-desktop"><div id="toc"></div></div>';
 					echo '</div>';

@@ -7,9 +7,6 @@ Biography
 -   I am a [Computer Science](http://cs.rutgers.edu) and
     [Philosophy](http://philosophy.rutgers.edu) undergraduate at
     [Rutgers New Brunswick](http://nb.rutgers.edu).
--   I work as a [Web Development Intern at Local Wisdom
-    Inc.](http://www.localwisdom.com/blog/people/pjones/), where I work
-    primarily with Objective-C for iOS.
 -   I earned an Associate's Degree in Liberal Arts from [Mercer County
     Community College](http://mccc.edu) where I graduated [quite
     early](http://www.mccc.edu/~humphrew/whatsnew/alumpauljones.htm).

@@ -2,7 +2,8 @@
 			<p><a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
 			<a href="https://github.com/pljns/Marksite">Website engine</a> | 
 			<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
-			<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a>
+			<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a> |
+			<a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a>
 			</p>
 	</footer>
 
