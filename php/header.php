@@ -12,6 +12,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@PLJNS">
+<meta name="twitter:description" content="<?php echo substr($lines[3], 12); ?>">
+<meta name="twitter:image" content="http://eden.rutgers.edu/~pmj34/img/apple-touch/icon-ipad-retina.png">
+
 <script src="js/vendor/Markdown.Converter.js" type="text/javascript"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-1.8.3.min.js" type="text/javascript"></script>
@@ -27,8 +32,8 @@
 <link href="css/night.css" type="text/css" rel="stylesheet" title="alternate">
 <link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
 
+<link rel="shortcut icon" href="http://eden.rutgers.edu/~pmj34/img/favicon.ico" />
 
-<link href="img/fav.ico" rel="shortcut icon" />
 <link rel="apple-touch-icon" href="img/apple-touch/icon.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch/icon-ipad.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch/icon-iphone-retina.png" />

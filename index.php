@@ -24,6 +24,7 @@
 	?>
 
     <title><?php echo $title; ?></title>
+    <meta name="twitter:title" content="<?php echo $title; ?>">
 </head>
 <body>
 
@@ -43,9 +44,7 @@
 					
 				?>	
 					
-					<div class="alert">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>Hello!</strong> I'm currently doing some development work on the site. Please excuse any interruption. - Paul. </div>
+
 				<?php	
 					echo "<script type='text/javascript'>";
 					echo "var page = $json_page;";
