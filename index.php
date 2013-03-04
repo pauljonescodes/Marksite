@@ -43,8 +43,8 @@
 
         				    while (false !== ($filename = readdir($handle))) {
         				        if ($filename != "." && $filename != ".." && $filename != "index.md" && $filename[0] != '.' && $filename != 'LICENSE.md' && $filename != 'Readme.md'){
-        				        $filename = basename($filename, ".md");
-            				    $page = $page . "-   [$filename](" . "?page=" . rawurlencode(substr($file, 7) . '/' .$filename) . ")\n";
+        				        $readfilename = basename($filename, ".md");
+            				    $page = $page . "-   [$readfilename](" . "?page=" . rawurlencode(substr($file, 7) . '/' .$filename) . ")\n";
             				    }
             				}
 
