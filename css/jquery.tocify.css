@@ -10,7 +10,6 @@
 	overflow:scroll;
     position: fixed;
     border: 0px solid #ccc;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */

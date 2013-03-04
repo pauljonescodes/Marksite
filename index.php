@@ -36,7 +36,12 @@
 				
 				<?php 
 				
-					$page      = file_get_contents($file);
+				    if (file_exists($file)){ 
+					   $page      = file_get_contents($file);
+				    } else {
+    				    $page = file_get_contents('./404.md');
+				    }
+					
 					$json_page = $json->encode($page);
 						
 					echo '<div class="row-fluid">';
