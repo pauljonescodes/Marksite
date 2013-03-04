@@ -36,7 +36,22 @@
 				
 				<?php 
 				
-				    if (file_exists($file)){ 
+				    if (is_dir($file)) {
+    				    $page = "# $pagename \n";
+    				    
+    				    if ($handle = opendir($file)) {
+
+        				    while (false !== ($filename = readdir($handle))) {
+        				        if ($filename != "." && $filename != ".." && $filename != "index.md" && $filename[0] != '.' && $filename != 'LICENSE.md' && $filename != 'Readme.md'){
+        				        $filename = basename($filename, ".md");
+            				    $page = $page . "-   [$filename](" . "?page=" . rawurlencode(substr($file, 7) . '/' .$filename) . ")\n";
+            				    }
+            				}
+
+        				    closedir($handle);
+        				}
+    				    
+				    } else if (file_exists($file)){ 
 					   $page      = file_get_contents($file);
 				    } else {
     				    $page = file_get_contents('./404.md');

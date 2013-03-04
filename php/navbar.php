@@ -38,7 +38,7 @@ function print_nav_bar($file_name) {
         	if ($current_entry != "." && $current_entry != ".." && $current_entry != "index.md" && $current_entry[0] != '.' && $current_entry != 'LICENSE.md' && $current_entry != 'Readme.md') { /* that don't equal this stuff */
         		if (is_dir($file_name . $current_entry)) { /* perform this if it's a directory */
         			echo '<li class="dropdown-submenu">';
-                    echo '<a tabindex="-1" href="#?page=' . rawurlencode(substr($file_name, 7) . '/' .$current_entry) . '">' . $current_entry . '</a>';
+                    echo '<a tabindex="-1" href="?page=' . rawurlencode(substr($file_name, 7) . '/' .$current_entry) . '">' . $current_entry . '</a>';
                     echo '<ul class="dropdown-menu">';
         			echo print_nav_bar($file_name . $current_entry . '/');
         			echo '</ul>';
