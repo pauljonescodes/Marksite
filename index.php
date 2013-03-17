@@ -24,7 +24,6 @@
 	?>
 
     <title><?php echo $title; ?></title>
-    <meta name="twitter:title" content="<?php echo $title; ?>">
 </head>
 <body>
 

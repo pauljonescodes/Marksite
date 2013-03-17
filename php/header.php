@@ -12,11 +12,6 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@PLJNS">
-<meta name="twitter:description" content="<?php echo substr($lines[3], 12); ?>">
-<meta name="twitter:image" content="http://eden.rutgers.edu/~pmj34/img/apple-touch/icon-ipad-retina.png">
-
 <script src="js/vendor/Markdown.Converter.js" type="text/javascript"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-1.8.3.min.js" type="text/javascript"></script>
