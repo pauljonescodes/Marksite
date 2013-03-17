@@ -10,8 +10,11 @@ Biography
 -   I earned an Associate's Degree in Liberal Arts from [Mercer County
     Community College](http://mccc.edu) where I graduated [quite
     early](http://www.mccc.edu/~humphrew/whatsnew/alumpauljones.htm).
--   I am interested in enrolling in a graduate program centered around
-    neuroscience and philosophy of mind.
+-   I have worked as a Web Development Intern for 
+    [Local Wisdom Inc.](http://www.localwisdom.com),
+    where I developed apps in Objective-C for iOS.
+-   I am aggresively pursuing my Bachelor's with ambitions to
+    continue my formal education.
 
 Contact
 -------
@@ -25,10 +28,10 @@ Social
 
 -   Facebook: [paulmmj](https://www.facebook.com/paulmmj)
 -   Twitter: [@PLJNS](https://twitter.com/PLJNS)
--   LinkedIn: [Paul Jones](http://lnkd.in/6mKzNf)
 -   Foursquare: [PLJNS](https://foursquare.com/pljns)
--   Google+: [Paul
-    Jones](https://plus.google.com/u/0/114499420749031467460/posts)
+-   Instagram: [@PLJNS](http://instagram.com/pljns)
 -   GitHub: [PLJNS](https://github.com/PLJNS)
 -   SoundCloud: [PLJNS](https://soundcloud.com/pljns)
+-   Google+: [Paul Jones](https://plus.google.com/u/0/114499420749031467460/posts)
 -   YouTube: [paulmmj](http://www.youtube.com/paulmmj)
+-   LinkedIn: [Paul Jones](http://lnkd.in/6mKzNf)
