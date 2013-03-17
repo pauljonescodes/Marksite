@@ -20,7 +20,4 @@ This is my lightweight CMS to publish notes. Check out <a href = "http://www.ede
 - Download the source
 - Load it on your server
 - Add Markdown files to `/pages`
-
-### For Rutgers
-
-- Rutgers
+- Go to `php/header.php` and add your own values for metadata

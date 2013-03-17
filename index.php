@@ -13,7 +13,6 @@
 	}
 
 	$pagename = ucwords(basename("./pages/" . $file, ".md"));
-	$sitename = substr($lines[0], 6);
 	$title = "";
 	
 	if ($pagename === 'Index') {
@@ -53,7 +52,7 @@
 				    } else if (file_exists($file)){ 
 					   $page      = file_get_contents($file);
 				    } else {
-    				    $page = file_get_contents('./404.md');
+    				    $page = file_get_contents('./pages/404.md');
 				    }
 					
 					$json_page = $json->encode($page);

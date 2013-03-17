@@ -1,13 +1,13 @@
 	<div class="navbar">
 		<div class="navbar-inner">
-			<a class="brand" href="?page=index.md"><?php echo substr($lines[0], 6); ?></a>
+			<a class="brand" href="?page=index.md"><?php echo $sitename; ?></a>
 				<ul id="nav" class="nav">
 
 <?php
 
 if ($handle = opendir('./pages')) {
     while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != ".." && $entry != "index.md") {
+        if ($entry != "." && $entry != ".." && $entry != "index.md" && $entry != "404.md") {
             if (is_dir("./pages/" . $entry)) {
                 echo '<li class="dropdown">';
                 echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' . $entry . '<b class="caret"></b></a>';

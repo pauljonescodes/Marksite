@@ -1,12 +1,18 @@
 <?php
 	include("JSON.php");
 	$json      = new Services_JSON();
-	$lines = file("meta.txt", FILE_IGNORE_NEW_LINES);	
+	$lines = file("meta.txt", FILE_IGNORE_NEW_LINES);
+	
+	$sitename = "Paul Jones at Rutgers University";
+	$keywords = "Rutgers,Computer science,Philosophy";
+	$author = "Paul Jones";
+	$description = "Paul Jones is a Computer Science and Philosophy undergraduate at Rutgers New Brunswick. He works as a Web Development Intern for Local Wisdom Inc., where he works primarily with Objective-C for iOS. He earned an Associate's Degree in Liberal Arts from Mercer County Community College. He is interested in enrolling in a graduate program centered around neuroscience and philosophy of mind.";
+		
 ?>
 
-<meta name="keywords" content="<?php echo substr($lines[1], 9); ?>">
-<meta name="author" content="<?php echo substr($lines[2], 7); ?>">
-<meta name="description" content= "<?php echo substr($lines[3], 12); ?>">
+<meta name="keywords" content="<?php echo $keywords; ?>">
+<meta name="author" content="<?php echo $author; ?>">
+<meta name="description" content= "<?php echo $description; ?>">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta charset="UTF-8">
