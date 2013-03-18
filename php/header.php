@@ -1,7 +1,6 @@
 <?php
 	include("JSON.php");
 	$json      = new Services_JSON();
-	$lines = file("meta.txt", FILE_IGNORE_NEW_LINES);
 	
 	$sitename = "Paul Jones at Rutgers University";
 	$keywords = "Rutgers,Computer science,Philosophy";

@@ -1,9 +1,11 @@
 	<footer id="footer">
-			<p><a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
+			<p>| <a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
 			<a href="https://github.com/pljns/Marksite">#Marksite</a> | 
 			<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
 			<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a> |
-			<a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a>
+			<a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a> |
+			<a href="http://eden.rutgers.edu/~pmj34/socialcontrol.php">#SocialControl</a> |
+			<noscript><a href="?page=" style="color:white;text-shadow: 0 2px 0 black;">Noscript sitemap</a></noscript>
 			</p>
 	</footer>
 

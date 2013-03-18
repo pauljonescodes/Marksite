@@ -35,17 +35,18 @@
 				<?php 
 				
 				    if (is_dir($file)) {
-    				    $page = "# $pagename \n";
+    				    $page = "<h1> $pagename </h1><ul>";
     				    
     				    if ($handle = opendir($file)) {
 
         				    while (false !== ($filename = readdir($handle))) {
-        				        if ($filename != "." && $filename != ".." && $filename != "index.md" && $filename[0] != '.' && $filename != 'LICENSE.md' && $filename != 'Readme.md'){
+        				        if ($filename != "." && $filename != ".." && $filename != "index.md" && $filename[0] != '.' && $filename != 'LICENSE.md' && $filename != 'Readme.md' && $filename != '404.md'){
         				        $readfilename = basename($filename, ".md");
-            				    $page = $page . "-   [$readfilename](" . "?page=" . rawurlencode(substr($file, 7) . '/' .$filename) . ")\n";
+            				    $page = $page . "<li><a href = ". "?page=" . rawurlencode(substr($file, 7) . '/' .$filename) .">$readfilename</a></li>";
             				    }
             				}
-
+            				
+            				$page = $page . "</ul>";
         				    closedir($handle);
         				}
     				    
@@ -56,7 +57,7 @@
 				    }
 					
 					$json_page = $json->encode($page);
-						
+					
 					echo '<div class="row-fluid">';
 					echo "<article class='span9'>";
 					echo '<script type="text/javascript">';
@@ -64,8 +65,8 @@
 					echo 'var converter = new Markdown.Converter();';
 					echo 'document.write(converter.makeHtml(page));';
 					echo '</script>';
+					echo "<noscript><pre style='padding:0px;margin:0px;border:0px;'>$page</pre></noscript>";
 					echo '</article>';
-					
 					echo '<div class="span3 scrollable visible-desktop"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
 					echo '</div>';
 				
