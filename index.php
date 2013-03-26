@@ -28,6 +28,8 @@
 
 <?php include_once("./php/navbar.php"); ?>
 
+<?prettify?>
+
 <div id="wrap">
 	<div class="container-fluid">
 			

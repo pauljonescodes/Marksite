@@ -9,6 +9,8 @@
 			</p>
 	</footer>
 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
 <script>
 $(function() {
                   //Calls the tocify method on your HTML div.
