@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 
 <head>
+<?php include_once("./php/header.php"); 
 
-	<?php include_once("./php/header.php"); 
-
-	$file = "";
-		
-	if (empty($_GET)) {
-	    $file = "./pages/index.md";
-	} else {
-	    $file = './pages/' . $_GET['page'];
-	}
-
-	$pagename = ucwords(basename("./pages/" . $file, ".md"));
-	$title = "";
+$file = "";
 	
-	if ($pagename === 'Index') {
-		$title = $sitename;
-	} else {
-		$title = $pagename . ' - ' . $sitename;
-	}
-	?>
+if (empty($_GET)) {
+    $file = "./pages/index.md";
+} else {
+    $file = './pages/' . $_GET['page'];
+}
+
+$pagename = ucwords(basename("./pages/" . $file, ".md"));
+$title = "";
+
+if ($pagename === 'Index') {
+	$title = $sitename;
+} else {
+	$title = $pagename . ' - ' . $sitename;
+}
+?>
 
     <title><?php echo $title; ?></title>
 </head>
 <body>
 
-<?php include_once("./php/navbar.php"); ?>
+<!--
+Body
+---->
 
-<?prettify?>
+<?php include_once("./php/navbar.php"); ?>
 
 <div id="wrap">
 	<div class="container-fluid">

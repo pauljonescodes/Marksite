@@ -1,3 +1,14 @@
+<!--
+
+### Navbar
+
+This is generated recursively with PHP, so it's not readable.
+It goes through all files and directories in the `/pages` directory
+and makes each directory a nested submenu and each file a clickable link.
+Directories are also clickable links.
+
+-->
+
 	<div class="navbar">
 		<div class="navbar-inner">
 			<a class="brand" href="?page=index.md"><?php echo $sitename; ?></a>

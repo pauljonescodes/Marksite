@@ -1,13 +1,27 @@
-	<footer id="footer">
-			<p>| <a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
-			<a href="https://github.com/pljns/Marksite">#Marksite</a> | 
-			<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
-			<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a> |
-			<a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a> |
-			<a href="http://eden.rutgers.edu/~pmj34/socialcontrol.php">#SocialControl</a> |
-			<noscript><a href="?page=" style="color:white;text-shadow: 0 2px 0 black;">Noscript sitemap</a></noscript>
-			</p>
-	</footer>
+<footer id="footer">
+		<p>| <a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
+		<a href="https://github.com/pljns/Marksite">#Marksite</a> | 
+		
+		<!--<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
+		<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a> | -->
+		
+		<a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a> |
+		<a href="http://eden.rutgers.edu/~pmj34/socialcontrol.php">#SocialControl</a> |
+		<noscript><a href="?page=" style="color:white;text-shadow: 0 2px 0 black;">Noscript sitemap</a></noscript>
+		</p>
+</footer>
+
+<!--
+
+### Javascript 2
+
+-   Prettify
+-   tocify
+-   Google Analytics
+-   TinyNav
+-   MathJax
+
+-->
 
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
@@ -38,10 +52,3 @@ MathJax.Hub.Config({
 </script>
 
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-<script>
-$("h2").click(function() {
-    var section_idx = parseInt($(this).get(0).id.replace( /section_(\d+)/, "$1" ));
-    wm_toggle_section( section_idx );
-  })
-</script>
