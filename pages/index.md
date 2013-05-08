@@ -13,7 +13,7 @@ Biography
 -   I have worked as a Web Development Intern for 
     [Local Wisdom Inc.](http://www.localwisdom.com),
     where I developed apps in Objective-C for iOS.
--   I am aggresively pursuing my Bachelor's with ambitions to
+-   I am aggressively pursuing my Bachelor's with ambitions to
     continue my formal education.
 
 Contact
@@ -26,6 +26,7 @@ Contact
 Social
 ------
 
+-   Blog: [PLJNS.com](http://www.pljns.com)
 -   Facebook: [paulmmj](https://www.facebook.com/paulmmj)
 -   Twitter: [@PLJNS](https://twitter.com/PLJNS)
 -   Foursquare: [PLJNS](https://foursquare.com/pljns)

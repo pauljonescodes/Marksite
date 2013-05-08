@@ -2,6 +2,17 @@
 html {
 	background-color: transparent;
 }
+strong {
+font-weight:600;
+}
+
+ol li ol li {
+list-style-type:lower-alpha;
+}
+
+h4,h5,h6 {
+font-variant:small-caps;
+}
 
 body {
 font-family:"Helvetica Neue Light", Helvetica, Arial, sans-serif;
@@ -177,8 +188,13 @@ blockquote p {
 }
 
 blockquote {
-	margin: 0 0 10px;
-	border-left: 5px solid #5f6a72;
+
+margin-top:16px;
+margin-left:0px;
+padding-bottom: 0px;
+padding-right: 0px;
+padding-top: -1px;
+	border-left: 1px solid #7e878e;
 }
 
 #footer {
@@ -205,12 +221,14 @@ padding: 2px 2px;
 color: black;
 background-color: #eff0f0;
 border: 1px solid #5f6a72;
+overflow: auto;
 }
 
 code {
 	font-size: 14px;
 	font-weight: 200;
 	color: #333333;
+	overflow: auto;
 }
 
 article code {
@@ -218,6 +236,7 @@ article code {
 	color: #333333;
 	border-color: #5f6a72;
 	background-color: #eff0f0;
+	overflow: auto;
 }
 
 article ul {
@@ -252,7 +271,7 @@ color:#d21034;
 }
 
 article b, article strong {
-font-weight: 500;
+font-weight: 600;
 }
 
 .navbar select {

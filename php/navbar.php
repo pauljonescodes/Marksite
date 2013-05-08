@@ -11,7 +11,7 @@ Directories are also clickable links.
 
 	<div class="navbar">
 		<div class="navbar-inner">
-			<a class="brand" href="?page=index.md"><?php echo $sitename; ?></a>
+			<a class="brand" href="?page=/index.md"><?php echo $sitename; ?></a>
 				<ul id="nav" class="nav">
 
 <?php
@@ -33,6 +33,9 @@ if ($handle = opendir('./pages')) {
             }
         }
     }
+    
+    echo '<li><a href="http://www.pljns.com">Blog</a></li>';
+    
     closedir($handle);
 }
 ?>
