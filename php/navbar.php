@@ -57,7 +57,7 @@ function print_nav_bar($file_name) {
         			echo print_nav_bar($file_name . $current_entry . '/');
         			echo '</ul>';
         			echo '</li>';
-        		} else {
+        		} else if (pathinfo($current_entry, PATHINFO_EXTENSION) == 'md'){
 	        		echo '<li><a href="?page=' . rawurlencode(substr($file_name, 7) . '/' .$current_entry) . ' ">' . ucwords(basename("./pages/" . $current_entry, ".md")) . '</a></li>';
         		}
         	}

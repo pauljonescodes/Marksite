@@ -300,10 +300,6 @@ border-right: 0px solid #5f6a72;
     #nav { display: none }
 }
 
-article p + p {
-  text-indent: 1.5em;
-  }
-
 blockquote p + p {
 	text-indent: 0em;
 }
