@@ -11,8 +11,14 @@ Directories are also clickable links.
 
 	<div class="navbar">
 		<div class="navbar-inner">
+    		<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+            </button>
 			<a class="brand" href="?page=/index.md"><?php echo $sitename; ?></a>
-				<ul id="nav" class="nav">
+			    <div class="nav-collapse collapse">
+				<ul class="nav">
 
 <?php
 
@@ -41,6 +47,7 @@ if ($handle = opendir('./pages')) {
 ?>
 
 				</ul>
+			    </div>
 			</div>
 		</div>
 		

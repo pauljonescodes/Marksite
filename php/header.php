@@ -74,13 +74,9 @@ validator.
 -->
 
 <script src="js/vendor/Markdown.Converter.js" type="text/javascript"></script>
-<script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
-<script src="js/vendor/bootstrap.js" type="text/javascript"></script>
-<script src="js/vendor/tinynav.js"></script>
 <script src="js/vendor/jquery.tocify.js"></script>
-<!--<script src="js/vendor/styleswitcher.js" type="text/javascript"></script>-->
 
 <!--
 
@@ -115,9 +111,173 @@ validator.
 <link href="css/bootstrap-responsive.min.css" type = "text/css" rel="stylesheet">
 <link href="css/normalize.css" type="text/css" rel="stylesheet">
 <link href="css/jquery.tocify.css" type="text/css" rel="stylesheet">
-<link href="css/style.css" type="text/css" rel="stylesheet">
-<!-- <link href="css/night.css" type="text/css" rel="stylesheet" title="alternate"> --> 
 <link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
+
+<style>
+
+html {
+	background-color: transparent;
+}
+
+body {
+    background-color: white;
+}
+
+strong {
+font-weight:600;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: 500;
+}
+
+h1 {
+margin-top: 5px;
+} h2 {
+border-bottom: 1px solid #7e878e;
+line-height: 35px;
+} h4 {
+font-variant:small-caps;
+font-weight:700;
+} h5 {
+font-variant:small-caps;
+font-size:1em;
+}
+
+#toc.affix {
+top:0px;
+bottom:60px;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+text-shadow: 0 2px 0 black;
+}
+
+.navbar {
+margin-bottom: 19px;
+}
+
+.nav-list > li > a:hover {
+text-shadow: 0 2px 0 black;
+color:white;
+background-color: #5f6a72; 
+}
+
+.navbar-inner {
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+
+article {
+display:block;
+font-weight: 300;
+border:1px solid #5f6a72;
+background-color:#eff0f0;
+font-size:15px;
+line-height:1.25;
+min-height:100%;
+padding-left:19px;
+padding-right:19px;
+padding-top: 4px;
+padding-bottom:4px;
+}
+
+.span6 {
+    margin-left:16px;
+    margin-right:16px;
+}
+
+article p {
+	text-align: justify;
+}
+.navbar ul, .nav ul {
+	padding-left: 0px;
+}
+
+.row-fluid [class*="span"]{
+	margin-left: 0px;
+}
+
+article p {
+	font-size:16px;
+	line-height: 1.375;
+}
+
+article a {
+-webkit-transition:color .2s ease-in-out;
+-moz-transition: color .2s ease-in-out;
+}
+
+code {
+    font-size:14px;
+}
+
+article blockquote {
+border-left:1px solid #5f6a72;
+}
+
+article ul {
+	margin: 0px;
+}
+
+article ol {
+	margin: 0px;
+}
+
+article li p {
+	margin: 0px;
+}
+
+article li {
+	font-size: 16px;
+	line-height: 1.425em;
+}
+
+code {
+border-color: #5f6a72;
+}
+
+@media screen and (min-width: 767px) {
+.navbar-inner .brand {
+	padding-left: 40px;
+		article { min-width: 100%; }
+}
+
+.navbar-inner {
+border-left: 0px solid #5f6a72;
+border-right: 0px solid #5f6a72;
+}
+}
+
+html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0px auto 20px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 40px;
+		display:block;
+      }
+      }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px)and (orientation:portrait){
+	article { min-width: 100%;}
+}
+
+</style>
 
 <!--
 

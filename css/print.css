@@ -7,6 +7,10 @@ article {
 	border: 0px;
 }
 
+blockquote {
+border-left: 2px solid #000 ;
+}
+
 #toc {
 	display: none;
 }

@@ -37,8 +37,6 @@ Body
 
 <div id="wrap">
 	<div class="container-fluid">
-			
-				
 				<?php 
 				
 				    if (is_dir($file)) {
@@ -55,50 +53,38 @@ Body
             				
             				$page = $page . "</ul>";
         				    closedir($handle);
+        				    
+        				    echo '<div class="row-fluid">';
+        				    echo "<article class='span9'>";
+        				    echo $page;
+        				    echo '</article></div>';
         				}
     				    
 				    } else {
-				        
-				    
 				        if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'md') { 
 				        echo '<div class="row-fluid">';
 				        echo "<article class='span9'>";
     				        $page = file_get_contents($file);
     				        $json_page = $json->encode($page);
     				        echo '<script type="text/javascript">';
-    				        echo "var page = $json_page;";
     				        echo 'var converter = new Markdown.Converter();';
-    				        echo 'document.write(converter.makeHtml(page));';
+    				        echo "document.write(converter.makeHtml($json_page));";
     				        echo '</script>';
-    				         echo '</article>';
+    				        echo '</article>';
     				    echo '<div class="span3 scrollable visible-desktop"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';
-    				    include_once("./php/footer-navmath.php");
     				    } else if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'html') { 
     				        echo file_get_contents($file);
     				    } else {
     				        $page = file_get_contents('./pages/404.md');
     				        $json_page = $json->encode($page);
     				        echo '<script type="text/javascript">';
-    				        echo "var page = $json_page;";
     				        echo 'var converter = new Markdown.Converter();';
-    				        echo 'document.write(converter.makeHtml(page));';
+    				        echo "document.write(converter.makeHtml($json_page));";
     				        echo '</script>';
-    				    }
-    				    
-    				   
+    				    } 
     				}
-					
-					
-					
-					
-					
-					// echo "<noscript><pre style='padding:0px;margin:0px;border:0px;'>$page</pre></noscript>";
-					
-				
 				?>
-			
-		
 	</div>
 </div>
 

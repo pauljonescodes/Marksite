@@ -1,13 +1,19 @@
-<footer id="footer">
-		<p>| <a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a> |
-		<a href="https://github.com/pljns/Marksite">#Marksite</a> | 
-		
-		<!--<a href="#" onclick='setActiveStyleSheet("default"); return false;'>Day</a> | 
-		<a href="#" onclick='setActiveStyleSheet("alternate"); return false;'>Night</a> | -->
-		
-		<a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a> |
-		<noscript><a href="?page=" style="color:white;text-shadow: 0 2px 0 black;">Noscript sitemap</a></noscript>
-		</p>
+
+<footer class="navbar navbar-inverse">
+		<div class="navbar-inner">
+		        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+        		</button>
+        		<div class="nav-collapse collapse">
+    		<ul class="nav">
+        		<li><a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a></li>
+        		<li><a href="https://github.com/pljns/Marksite">Marksite</a></li>
+        		<li><a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a></li>
+    		</ul>
+        		</div>
+		</div>
 </footer>
 
 <!--
@@ -22,6 +28,13 @@
 
 -->
 
+<script>
+$(function() {
+                  //Calls the tocify method on your HTML div.
+                  $("#toc").tocify({ selectors: "h2, h3, h4, h5, h6" });
+              });
+</script>
+
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
 <script>
@@ -31,8 +44,15 @@
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-<script>
-  $(function () {
-    $("#nav").tinyNav();
-  });
+<!--
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
 </script>
+
+-->
+
+<script src="js/vendor/bootstrap.js" type="text/javascript"></script>
+<script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
