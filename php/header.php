@@ -115,38 +115,21 @@ validator.
 
 <style>
 
-html {
-	background-color: transparent;
-}
-
 body {
     background-color: white;
-}
-
-strong {
-font-weight:600;
-}
-
-h1,h2,h3,h4,h5,h6 {
-font-weight: 500;
-}
-
-h1 {
-margin-top: 5px;
-} h2 {
-border-bottom: 1px solid #7e878e;
-line-height: 35px;
-} h4 {
-font-variant:small-caps;
-font-weight:700;
-} h5 {
-font-variant:small-caps;
-font-size:1em;
 }
 
 #toc.affix {
 top:0px;
 bottom:60px;
+}
+
+#toc a {
+padding-left: 12px;
+}
+
+.navbar ul, .nav ul {
+	padding-left: 0px;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
@@ -158,7 +141,6 @@ margin-bottom: 19px;
 }
 
 .nav-list > li > a:hover {
-text-shadow: 0 2px 0 black;
 color:white;
 background-color: #5f6a72; 
 }
@@ -167,6 +149,10 @@ background-color: #5f6a72;
 -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
 border-radius: 0px;
+}
+
+.row-fluid [class*="span"]{
+	margin-left: 0px;
 }
 
 article {
@@ -183,20 +169,41 @@ padding-top: 4px;
 padding-bottom:4px;
 }
 
-.span6 {
-    margin-left:16px;
-    margin-right:16px;
+article h1, article h2, article h3, article h4, article h5, article h6 {
+font-weight: 500;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+text-shadow: 0px 1px 0px white;
+font-size: inherit;
+}
+
+article h1 {
+margin-top: 5px;
+} article h2 {
+border-bottom: 1px solid #a0a9b0;
+-moz-box-shadow: 0px 1px 0px white; 
+-webkit-box-shadow: 0px 1px 0px white; 
+box-shadow: 0px 1px 0px white;
+line-height: 35px;
+} article h4 {
+font-variant:small-caps;
+font-weight:700;
+} article h5 {
+font-variant:small-caps;
+font-size:1em;
+}
+
+article p, article li {
+text-shadow: 0px 1px 0px white;
+}
+
+article strong {
+font-weight: 400;
 }
 
 article p {
 	text-align: justify;
-}
-.navbar ul, .nav ul {
-	padding-left: 0px;
-}
-
-.row-fluid [class*="span"]{
-	margin-left: 0px;
 }
 
 article p {
@@ -207,14 +214,6 @@ article p {
 article a {
 -webkit-transition:color .2s ease-in-out;
 -moz-transition: color .2s ease-in-out;
-}
-
-code {
-    font-size:14px;
-}
-
-article blockquote {
-border-left:1px solid #5f6a72;
 }
 
 article ul {
@@ -234,19 +233,20 @@ article li {
 	line-height: 1.425em;
 }
 
-code {
-border-color: #5f6a72;
+article code {
+    font-size:14px;
+    border-color: #5f6a72;
+}
+
+article blockquote {
+border-left:1px solid #5f6a72;
+margin-left: 0px;
 }
 
 @media screen and (min-width: 767px) {
 .navbar-inner .brand {
 	padding-left: 40px;
 		article { min-width: 100%; }
-}
-
-.navbar-inner {
-border-left: 0px solid #5f6a72;
-border-right: 0px solid #5f6a72;
 }
 }
 
@@ -275,6 +275,7 @@ html,
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px)and (orientation:portrait){
 	article { min-width: 100%;}
+}
 }
 
 </style>

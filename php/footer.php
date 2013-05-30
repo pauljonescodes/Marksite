@@ -1,15 +1,10 @@
 
 <footer class="navbar navbar-inverse">
 		<div class="navbar-inner">
-		        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            <span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-        		</button>
-        		<div class="nav-collapse collapse">
     		<ul class="nav">
         		<li><a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a></li>
         		<li><a href="https://github.com/pljns/Marksite">Marksite</a></li>
+        		<li><a href="http://pljns.com/Rutstrap">Rutstrap</a></li>
         		<li><a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a></li>
     		</ul>
         		</div>
@@ -44,14 +39,12 @@ $(function() {
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-<!--
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  tex2jax: {inlineMath: [['$','$']]}
 });
 </script>
-
--->
 
 <script src="js/vendor/bootstrap.js" type="text/javascript"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
