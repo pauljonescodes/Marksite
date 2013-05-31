@@ -12,7 +12,7 @@ Biography
     early](http://www.mccc.edu/~humphrew/whatsnew/alumpauljones.htm).
 -   I work as a Web Development Intern for 
     [Local Wisdom Inc.](http://www.localwisdom.com),
-    where I developed apps in Objective-C for iOS and in C++.
+    where I developed apps in Objective-C for iOS and  in C++.
 -   I am aggressively pursuing my Bachelor's with ambitions to
     continue my formal education.
 
@@ -34,5 +34,6 @@ Social
 -   GitHub: [PLJNS](https://github.com/PLJNS)
 -   SoundCloud: [PLJNS](https://soundcloud.com/pljns)
 -   Google+: [Paul Jones](https://plus.google.com/u/0/114499420749031467460/posts)
+-   Nike+: [PLJNS](http://nikeplus.nike.com/plus/profile/PLJNS/)
 -   YouTube: [paulmmj](http://www.youtube.com/paulmmj)
 -   LinkedIn: [Paul Jones](http://lnkd.in/6mKzNf)

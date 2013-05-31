@@ -71,7 +71,7 @@ Body
     				        echo "document.write(converter.makeHtml($json_page));";
     				        echo '</script>';
     				        echo '</article>';
-    				    echo '<div class="span3 scrollable visible-desktop"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
+    				    echo '<div class="span3 scrollable hidden-phone"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';
     				    } else if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'html') { 
     				        echo file_get_contents($file);

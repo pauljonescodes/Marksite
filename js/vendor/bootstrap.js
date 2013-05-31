@@ -2128,6 +2128,7 @@
     offset: 0
   }
 
+$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
 
  /* AFFIX NO CONFLICT
   * ================= */

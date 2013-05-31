@@ -1,4 +1,3 @@
-
 <!----
 Header
 ------>
@@ -12,6 +11,7 @@ Header
  */
 
 $sitename   = "Paul Jones at Rutgers University";
+$short_sitename = "Paul Jones at Rutgers";
 $keywords   = "Rutgers,Computer science,Philosophy";
 $author     = "Paul Jones";
 $description = "Paul Jones is a Computer Science and Philosophy 
@@ -117,6 +117,7 @@ validator.
 
 body {
     background-color: white;
+    /*padding-top: 60px*/
 }
 
 #toc.affix {
@@ -243,6 +244,52 @@ border-left:1px solid #5f6a72;
 margin-left: 0px;
 }
 
+@media only screen and (max-device-width: 480px) {
+    body {
+        padding: 0px;
+        background-color: #eff0f0;
+    }
+    
+    article {
+        padding-top: 44px;
+    }
+    
+    .navbar {
+        margin: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+    }
+    
+    #top {
+        position: fixed;
+        width: 100%;
+        height: 44px;
+    }
+    
+    .navbar-inner {
+        padding: 0px 0px 0px 14px;
+    }
+    
+    .btn-navbar {
+        margin-top: 100px;
+    }
+    
+    .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+        color: white;
+    }
+    
+    article {
+        border: 0px;
+        margin-bottom: 60px;
+    }
+    
+    #wrap {
+        margin:0px;
+        padding: 0px;
+    }
+}
+
 @media screen and (min-width: 767px) {
 .navbar-inner .brand {
 	padding-left: 40px;
@@ -270,13 +317,7 @@ html,
       #footer {
         height: 40px;
 		display:block;
-      }
-      }
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px)and (orientation:portrait){
-	article { min-width: 100%;}
-}
-}
+      }  
 
 </style>
 

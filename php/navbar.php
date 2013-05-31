@@ -9,16 +9,20 @@ Directories are also clickable links.
 
 -->
 
-	<div class="navbar">
+	<div class="navbar" id="top">
 		<div class="navbar-inner">
-    		<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			
+			<a class="brand hidden-phone" href="?page=/index.md"><?php echo $sitename; ?></a>
+			<a class="brand visible-phone" href="?page=/index.md"><?php echo $short_sitename; ?></a>
+			
+			<button type="button" class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
             </button>
-			<a class="brand" href="?page=/index.md"><?php echo $sitename; ?></a>
-			    <div class="nav-collapse collapse">
-				<ul class="nav">
+            
+		    <div class="nav-collapse collapse">
+    		    <ul class="nav">
 
 <?php
 
@@ -44,12 +48,13 @@ if ($handle = opendir('./pages')) {
     
     closedir($handle);
 }
+
 ?>
 
-				</ul>
-			    </div>
-			</div>
-		</div>
+                    </ul> <!-- nav -->
+			    </div> <!-- nav-collapse -->
+			</div> <!-- navbar-inner -->
+		</div> <!-- navbar -->
 		
 <?php
 
