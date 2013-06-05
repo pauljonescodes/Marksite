@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Paul Jones -- Programmer -- @PLJNS
+
+# TECHNOLOGY COLOPHON
+
+    HTML5BP
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    Bootstrap
+    Tocify
+    Markdown

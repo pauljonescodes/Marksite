@@ -1,14 +1,4 @@
-<!----
-Header
------->
 <?php
-
-/*
- * Metadata
- *
- * You should edit this for your site!
- *
- */
 
 $sitename   = "Paul Jones at Rutgers University";
 $short_sitename = "Paul Jones at Rutgers";
@@ -21,28 +11,10 @@ for iOS. He earned an Associate's Degree in Liberal Arts from Mercer
 County Community College. He is interested in enrolling in a graduate 
 program centered around neuroscience and philosophy of mind.";
 
-/*
- * I only have PHP 4, so this is how I parse JSON.
- * You may want to change this to the PHP5 JSON library.
- */
-
 include("JSON.php");
 $json       = new Services_JSON();
 		
 ?>
-
-<!--
-
-### Metadata
-
-This data comes from PHP, you'd likely change these variables if you're
-making you're own. I recommned you do not change them locally here.
-
-There's also a HTML5 Boilerplate Chrome viewport tag here that doesn't
-validate with the W3C, but is fully valid and evidently a bug with the
-validator.
-
--->
 
 <meta name="keywords" content="<?php echo $keywords; ?>">
 <meta name="author" content="<?php echo $author; ?>">
@@ -53,58 +25,10 @@ validator.
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
-<!--
-
-### Javascript
-
--   Markdown.Converter.js
-    -   This is the present MD converter used.
-    
--   modernizr-2.6.2.min.js
-    -   This is part of HTML5 Boilerplate
-    
--   jquery-1.8.3.min.js
-    -   Locally loaded jquery for TOC and navbar
-    
--   jquery-ui-1.9.2.custom.min.js
-
--   js/vendor/bootstrap.js
-    -   Twitter Bootstrap
-
--->
-
 <script src="js/vendor/Markdown.Converter.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery.tocify.js"></script>
-
-<!--
-
-### CSS
-
--   main.css
-    -   Boilerplate, normalizes typography, selection, etc.
-    
--   bootstrap.min.css
-    -   Twitter Boostrap
-    -   Do not change this file, leave it be or don't use it.
-    
--   bootstrap-responsive.min.css
-    -   Responsive! For notes on my phone.
-    
--   normalize.css
-    -   Another Boilerplate thing
-    
--   css/jquery.tocify.css
-    -   For table of contents
-    
--   css/style.css
-    -   My custom style for Rutgers/Marksite
-    -   TODO: Seperate Marksite and Rutgers CSS
-    
--   css/print.css
-    -   Marksite print style, custom.
--->
 
 <link href="css/main.css" type="text/css" rel="stylesheet">
 <link href="css/bootstrap.min.css" media="screen" type="text/css" rel="stylesheet">
@@ -215,6 +139,8 @@ article p {
 article a {
 -webkit-transition:color .2s ease-in-out;
 -moz-transition: color .2s ease-in-out;
+-ms-transition: color .2s ease-in-out;
+-o-transition: color .2s ease-in-out;
 }
 
 article ul {
@@ -236,22 +162,21 @@ article li {
 
 article code {
     font-size:14px;
-    border-color: #5f6a72;
+    border-color: #a0a9b0;
 }
 
 article blockquote {
-border-left:1px solid #5f6a72;
-margin-left: 0px;
+border-left:1px solid #a0a9b0;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 979px) {
     body {
         padding: 0px;
         background-color: #eff0f0;
     }
     
     article {
-        padding-top: 44px;
+        min-width: 100%;
     }
     
     .navbar {
@@ -259,12 +184,6 @@ margin-left: 0px;
         border-left: 0px;
         border-right: 0px;
         border-top: 0px;
-    }
-    
-    #top {
-        position: fixed;
-        width: 100%;
-        height: 44px;
     }
     
     .navbar-inner {
@@ -290,29 +209,35 @@ margin-left: 0px;
     }
 }
 
+@media (max-width: 767px) {
+    article {
+        padding-top: 44px;
+    } 
+    #top {
+        position: fixed;
+        width: 100%;
+        height: 44px;
+    }
+}
+
 @media screen and (min-width: 767px) {
 .navbar-inner .brand {
-	padding-left: 40px;
-		article { min-width: 100%; }
+	padding-left: 30px;
 }
 }
 
 html,
       body {
         height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
       }
 
-      /* Wrapper for page content to push down footer */
       #wrap {
         min-height: 100%;
         height: auto !important;
         height: 100%;
-        /* Negative indent footer by it's height */
         margin: 0px auto 20px;
       }
-
-      /* Set the fixed height of the footer here */
+      
       #push,
       #footer {
         height: 40px;
@@ -320,22 +245,6 @@ html,
       }  
 
 </style>
-
-<!--
-
-### Icons
-
-You are going to want to change these for your site.
-
--   Shortcut icon
-    -   This is the "favicon."
-
--   Apple-touch-icons
-    -   For the iOS web-app
-    -   Startup image
-        -   What shows up when you load the app
-
--->
 
 <link rel="shortcut icon" href="http://eden.rutgers.edu/~pmj34/img/favicon.ico" />
 <link rel="apple-touch-icon" href="img/apple-touch/icon.png" />

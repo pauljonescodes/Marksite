@@ -7,25 +7,11 @@
         		<li><a href="http://pljns.com/Rutstrap">Rutstrap</a></li>
         		<li><a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a></li>
     		</ul>
-        		</div>
-		</div>
+        </div>
 </footer>
-
-<!--
-
-### Javascript 2
-
--   Prettify
--   tocify
--   Google Analytics
--   TinyNav
--   MathJax
-
--->
 
 <script>
 $(function() {
-                  //Calls the tocify method on your HTML div.
                   $("#toc").tocify({ selectors: "h2, h3, h4, h5, h6" });
               });
 </script>
@@ -42,7 +28,7 @@ $(function() {
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$']]}
+  tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}
 });
 </script>
 
