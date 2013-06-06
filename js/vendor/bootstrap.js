@@ -787,7 +787,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================= */
-
+$('a:not([target])').click(function(){
+    self.location = $(this).attr('href');
+    return false;
+});
 
 !function ($) {
 
@@ -1592,6 +1595,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ======================================================== */
+
 
 
 !function ($) {

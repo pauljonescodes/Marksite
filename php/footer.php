@@ -1,4 +1,3 @@
-
 <footer class="navbar navbar-inverse">
 		<div class="navbar-inner">
     		<ul class="nav">
@@ -12,11 +11,15 @@
 
 <script>
 $(function() {
-                  $("#toc").tocify({ selectors: "h2, h3, h4, h5, h6" });
-              });
+        $("#toc").tocify({ selectors: "h2, h3, h4, h5, h6" });
+    });
 </script>
 
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
+</script>
 
 <script>
 	var _gaq=[['_setAccount','UA-37632044-1'],['_trackPageview']];
@@ -25,13 +28,13 @@ $(function() {
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}
-});
-</script>
-
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <script src="js/vendor/bootstrap.js" type="text/javascript"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}
+    });
+</script>

@@ -41,7 +41,6 @@ $json       = new Services_JSON();
 
 body {
     background-color: white;
-    /*padding-top: 60px*/
 }
 
 #toc.affix {
@@ -247,8 +246,8 @@ html,
 </style>
 
 <link rel="shortcut icon" href="http://eden.rutgers.edu/~pmj34/img/favicon.ico" />
-<link rel="apple-touch-icon" href="img/apple-touch/icon.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch/icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch/icon-iphone-retina.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch/icon-ipad-retina.png" />
+<link rel="apple-touch-icon-precomposed" href="img/apple-touch/icon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch/icon-ipad.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch/icon-iphone-retina.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch/icon-ipad-retina.png" />
 <link rel="apple-touch-startup-image" href="img/startup.jpg">
