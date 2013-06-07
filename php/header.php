@@ -39,13 +39,17 @@ $json       = new Services_JSON();
 
 <style>
 
-body {
-    background-color: white;
-}
+
+
+html { -webkit-font-smoothing: antialiased; }
 
 #toc.affix {
 top:0px;
 bottom:60px;
+}
+
+body {
+    background-color: #f4f4f4;
 }
 
 #toc a {
@@ -83,7 +87,7 @@ article {
 display:block;
 font-weight: 300;
 border:1px solid #5f6a72;
-background-color:#eff0f0;
+background-color: #eff0f0;
 font-size:15px;
 line-height:1.25;
 min-height:100%;
@@ -168,6 +172,85 @@ article blockquote {
 border-left:1px solid #a0a9b0;
 }
 
+footer ul {
+display: block;
+float: left;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 14px;
+height: 40px;
+left: 0px;
+line-height: 20px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 10px;
+margin-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+position: relative;
+}
+
+footer li {
+    display: list-item;
+float: left;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 14px;
+height: 40px;
+left: auto;
+line-height: 20px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-left: 0px;
+position: static;
+}
+
+footer a {
+    display: block;
+float: none;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 14px;
+height: 20px;
+left: auto;
+line-height: 20px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+outline-color: 
+rgb(255, 255, 255);
+outline-style: none;
+outline-width: 0px;
+padding-bottom: 10px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 10px;
+position: static;
+text-align: -webkit-auto;
+text-decoration: none;
+text-shadow: rgba(0, 0, 0, 0) 0px 1px 0px;
+-webkit-transition:color .2s ease-in-out;
+-moz-transition: color .2s ease-in-out;
+-ms-transition: color .2s ease-in-out;
+-o-transition: color .2s ease-in-out;
+color: #a0a9b0;
+}
+
+footer a:hover {
+    color:white;
+}
+
 @media (max-width: 979px) {
     body {
         padding: 0px;
@@ -176,6 +259,7 @@ border-left:1px solid #a0a9b0;
     
     article {
         min-width: 100%;
+        background-color: #eff0f0;
     }
     
     .navbar {
@@ -208,7 +292,7 @@ border-left:1px solid #a0a9b0;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     article {
         padding-top: 44px;
     } 

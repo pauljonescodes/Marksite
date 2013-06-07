@@ -20,7 +20,7 @@ if ($pagename === 'Index') {
 	$title = $pagename . ' - ' . $sitename;
 }
 
-$dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md');
+$dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', 'footer.md', 'navbar.md');
 
 ?>
 

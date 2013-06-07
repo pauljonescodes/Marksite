@@ -1,11 +1,13 @@
 <footer class="navbar navbar-inverse">
 		<div class="navbar-inner">
-    		<ul class="nav">
-        		<li><a href = "https://github.com/pljns/Rutgers-University-Notes">Note source files</a></li>
-        		<li><a href="https://github.com/pljns/Marksite">Marksite</a></li>
-        		<li><a href="http://pljns.com/Rutstrap">Rutstrap</a></li>
-        		<li><a href="http://eden.rutgers.edu/~pmj34/?page=%2FNotes%2F%2FLICENSE.md">License</a></li>
-    		</ul>
+		      <?php 
+        		
+            		$footer = file_get_contents("./pages/footer.md");
+            		$json_footer = $json->encode($footer);
+            		echo '<script type="text/javascript">';
+            		echo "document.write(converter.makeHtml($json_footer));</script>";
+        		
+        		?>
         </div>
 </footer>
 
