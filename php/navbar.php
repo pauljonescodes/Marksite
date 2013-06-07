@@ -28,7 +28,7 @@ Directories are also clickable links.
 
 if ($handle = opendir('./pages')) {
     while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != ".." && $entry != "index.md" && $entry != "404.md") {
+        if (!in_array($entry, $dont_want)) {
             if (is_dir("./pages/" . $entry)) {
                 echo '<li class="dropdown">';
                 echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' . $entry . '<b class="caret"></b></a>';
@@ -61,7 +61,7 @@ if ($handle = opendir('./pages')) {
 function print_nav_bar($file_name) {
 	if ($file_handle = opendir($file_name)) { /* if it opens */
 		while (false !== ($current_entry = readdir($file_handle))) { /* while there are entries */
-        	if ($current_entry != "." && $current_entry != ".." && $current_entry != "index.md" && $current_entry[0] != '.' && $current_entry != 'LICENSE.md' && $current_entry != 'Readme.md') { /* that don't equal this stuff */
+        	if ($current_entry[0] != '.' && !in_array($current_entry, $dont_want) && $current_entry != "LICENSE.md" && $current_entry != "Readme.md") { /* that don't equal this stuff */
         		if (is_dir($file_name . $current_entry)) { /* perform this if it's a directory */
         			echo '<li class="dropdown-submenu">';
                     echo '<a tabindex="-1" href="?page=' . rawurlencode(substr($file_name, 7) . '/' .$current_entry) . '">' . $current_entry . '</a>';
