@@ -7,9 +7,6 @@ article {
 	border: 0px;
 }
 
-blockquote {
-border-left: 2px solid #000 ;
-}
 
 #toc {
 	display: none;
@@ -38,9 +35,17 @@ body, #content, #container {
 
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
-body {
-   font: 1em Georgia, "Times New Roman", Times, serif;
+h1,h2,h3,h4,h5,h6 {
+   font: 1em "Palatino Linotype","Book Antiqua",Palatino,serif;
    color: #000; 
+}
+
+article h2 {
+    border-bottom-color: black;
+}
+
+article blockquote {
+border-left-color: black;
 }
 
 /* SECTION 4: Set heading font face, sizes, and color.

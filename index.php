@@ -72,12 +72,18 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
     				    } else if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'html') { 
     				        echo file_get_contents($file);
     				    } else {
+    				    echo '<div class="row-fluid">';
+				        echo "<article class='span9'>";
     				        $page = file_get_contents('./pages/404.md');
     				        $json_page = $json->encode($page);
     				        echo '<script type="text/javascript">';
     				        echo 'var converter = new Markdown.Converter();';
     				        echo "document.write(converter.makeHtml($json_page));";
     				        echo '</script>';
+    				        echo '</script>';
+    				        echo '</article>';
+    				        echo '<div class="span3 scrollable visible-desktop"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
+    				    echo '</div>';
     				    } 
     				}
 				?>

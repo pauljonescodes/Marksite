@@ -35,11 +35,8 @@ $json       = new Services_JSON();
 <link href="css/bootstrap-responsive.min.css" type = "text/css" rel="stylesheet">
 <link href="css/normalize.css" type="text/css" rel="stylesheet">
 <link href="css/jquery.tocify.css" type="text/css" rel="stylesheet">
-<link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
 
 <style>
-
-
 
 html { -webkit-font-smoothing: antialiased; }
 
@@ -173,50 +170,26 @@ border-left:1px solid #a0a9b0;
 }
 
 footer ul {
-display: block;
-float: left;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 14px;
-height: 40px;
-left: 0px;
-line-height: 20px;
 list-style-image: none;
 list-style-position: outside;
 list-style-type: none;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 10px;
 margin-top: 0px;
-padding-bottom: 0px;
-padding-left: 0px;
-padding-right: 0px;
-padding-top: 0px;
-position: relative;
+margin-bottom: 0px;
 }
 
 footer li {
-    display: list-item;
+display: list-item;
 float: left;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 14px;
-height: 40px;
 left: auto;
-line-height: 20px;
 list-style-image: none;
 list-style-position: outside;
 list-style-type: none;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
-padding-left: 0px;
 position: static;
 }
 
 footer a {
     display: block;
 float: none;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-size: 14px;
 height: 20px;
 left: auto;
@@ -232,10 +205,10 @@ outline-color:
 rgb(255, 255, 255);
 outline-style: none;
 outline-width: 0px;
-padding-bottom: 10px;
+padding-bottom:15%;
 padding-left: 15px;
 padding-right: 15px;
-padding-top: 10px;
+padding-top: 15%;
 position: static;
 text-align: -webkit-auto;
 text-decoration: none;
@@ -303,12 +276,6 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width: 767px) {
-.navbar-inner .brand {
-	padding-left: 30px;
-}
-}
-
 html,
       body {
         height: 100%;
@@ -328,6 +295,8 @@ html,
       }  
 
 </style>
+
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
 
 <link rel="shortcut icon" href="http://eden.rutgers.edu/~pmj34/img/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="img/apple-touch/icon.png" />
