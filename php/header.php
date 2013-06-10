@@ -38,26 +38,43 @@ $json       = new Services_JSON();
 
 <style>
 
-html { -webkit-font-smoothing: antialiased; }
+html, body {
+height: 100%;
+-webkit-font-smoothing: antialiased;
+}
+
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0px auto 20px;
+}
+
+#push, #footer {
+height: 40px;
+display:block;
+} 
 
 #toc.affix {
 top:0px;
 bottom:60px;
 }
 
-body {
-    background-color: #f4f4f4;
-}
-
 #toc a {
 padding-left: 12px;
 }
 
-.navbar ul, .nav ul {
-	padding-left: 0px;
+body {
+background-color: #f4f4f4;
 }
 
-.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+.navbar ul, .nav ul {
+padding-left: 0px;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
 text-shadow: 0 2px 0 black;
 }
 
@@ -77,13 +94,13 @@ border-radius: 0px;
 }
 
 .row-fluid [class*="span"]{
-	margin-left: 0px;
+margin-left: 0px;
 }
 
 article {
 display:block;
 font-weight: 300;
-border:1px solid #5f6a72;
+border:1px solid #25292C;
 background-color: #eff0f0;
 font-size:15px;
 line-height:1.25;
@@ -94,11 +111,21 @@ padding-top: 4px;
 padding-bottom:4px;
 }
 
-article h1, article h2, article h3, article h4, article h5, article h6 {
+article h1, 
+article h2, 
+article h3, 
+article h4, 
+article h5, 
+article h6 {
 font-weight: 500;
 }
 
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small, 
+h2 small, 
+h3 small, 
+h4 small, 
+h5 small, 
+h6 small {
 text-shadow: 0px 1px 0px white;
 font-size: inherit;
 }
@@ -128,12 +155,12 @@ font-weight: 400;
 }
 
 article p {
-	text-align: justify;
+text-align: justify;
 }
 
 article p {
-	font-size:16px;
-	line-height: 1.375;
+font-size:16px;
+line-height: 1.375;
 }
 
 article a {
@@ -144,29 +171,29 @@ article a {
 }
 
 article ul {
-	margin: 0px;
+margin: 0px;
 }
 
 article ol {
-	margin: 0px;
+margin: 0px;
 }
 
 article li p {
-	margin: 0px;
+margin: 0px;
 }
 
 article li {
-	font-size: 16px;
-	line-height: 1.425em;
+font-size: 16px;
+line-height: 1.425em;
 }
 
 article code {
-    font-size:14px;
-    border-color: #a0a9b0;
+font-size:14px;
+border-color: #a0a9b0;
 }
 
 article blockquote {
-border-left:1px solid #a0a9b0;
+border-left:1px solid #25292C;
 }
 
 footer ul {
@@ -188,7 +215,7 @@ position: static;
 }
 
 footer a {
-    display: block;
+display: block;
 float: none;
 font-size: 14px;
 height: 20px;
@@ -221,78 +248,61 @@ color: #a0a9b0;
 }
 
 footer a:hover {
-    color:white;
+color:white;
 }
 
 @media (max-width: 979px) {
     body {
-        padding: 0px;
-        background-color: #eff0f0;
+    padding: 0px;
+    background-color: #eff0f0;
     }
     
     article {
-        min-width: 100%;
-        background-color: #eff0f0;
+    min-width: 100%;
+    background-color: #eff0f0;
     }
     
     .navbar {
-        margin: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
+    margin: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
     }
     
     .navbar-inner {
-        padding: 0px 0px 0px 14px;
+    padding: 0px 0px 0px 14px;
     }
     
     .btn-navbar {
-        margin-top: 100px;
+    margin-top: 100px;
     }
     
     .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-        color: white;
+    color: white;
     }
     
     article {
-        border: 0px;
-        margin-bottom: 60px;
+    border: 0px;
+    margin-bottom: 60px;
     }
     
     #wrap {
-        margin:0px;
-        padding: 0px;
+    margin:0px;
+    padding: 0px;
     }
 }
 
 @media (max-width: 480px) {
     article {
-        padding-top: 44px;
+    padding-top: 44px;
     } 
+    
     #top {
-        position: fixed;
-        width: 100%;
-        height: 44px;
+    position: fixed;
+    width: 100%;
+    height: 44px;
     }
-}
-
-html,
-      body {
-        height: 100%;
-      }
-
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        margin: 0px auto 20px;
-      }
-      
-      #push,
-      #footer {
-        height: 40px;
-		display:block;
-      }  
+} 
 
 </style>
 
