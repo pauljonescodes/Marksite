@@ -26,5 +26,5 @@ an interface with the same structure you designed!
 3.  Define your metadata in `/php/header.php`
 4.  Define your index in `/pages/index.md`
 5.  Define your footer in `/pages/footer.md`
-6.  Add any other Markdown files to `/pages`
-7.  Your done!
+6.  Add any other Markdown files to `/pages/`
+7.  You're done!
