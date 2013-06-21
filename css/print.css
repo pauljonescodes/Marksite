@@ -16,8 +16,12 @@ article {
 	display:none;
 }
 
-code {
-	border: none;
+pre.prettyprint {
+border: 1px solid #000 !important;
+}
+
+code.prettyprint {
+border: 0px solid #000 !important;
 }
 
 body, #content, #container {
@@ -46,6 +50,10 @@ article h2 {
 
 article blockquote {
 border-left-color: black;
+border-bottom: 0;
+border-top: 0;
+border-right: 0;
+border-left: 1px solid black;
 }
 
 /* SECTION 4: Set heading font face, sizes, and color.

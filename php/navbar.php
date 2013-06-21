@@ -1,14 +1,3 @@
-<!--
-
-### Navbar
-
-This is generated recursively with PHP, so it's not readable.
-It goes through all files and directories in the `/pages` directory
-and makes each directory a nested submenu and each file a clickable link.
-Directories are also clickable links.
-
--->
-
 	<div class="navbar" id="top">
 		<div class="navbar-inner">
 			
@@ -51,10 +40,10 @@ if ($handle = opendir('./pages')) {
 
 ?>
 
-                    </ul> <!-- nav -->
-			    </div> <!-- nav-collapse -->
-			</div> <!-- navbar-inner -->
-		</div> <!-- navbar -->
+                    </ul>
+			    </div>
+			</div>
+		</div>
 		
 <?php
 

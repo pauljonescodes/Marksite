@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-<?php include_once("./php/header.php"); 
+
+<?php 
 
 $file = "";
 	
@@ -13,6 +14,8 @@ if (empty($_GET)) {
 
 $pagename = ucwords(basename("./pages/" . $file, ".md"));
 $title = "";
+
+include_once("./php/header.php"); 
 
 if ($pagename === 'Index') {
 	$title = $sitename;

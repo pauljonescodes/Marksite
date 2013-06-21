@@ -1,18 +1,16 @@
 <footer class="navbar navbar-inverse">
 		<div class="navbar-inner">
-		      <?php 
-        		
-            		$footer = file_get_contents("./pages/footer.md");
-            		$json_footer = $json->encode($footer);
-            		echo '<script type="text/javascript">';
-            		echo "document.write(converter.makeHtml($json_footer));</script>";
-        		
-        		?>
+            <?php     	
+                $footer = file_get_contents("./pages/footer.md");
+                $json_footer = $json->encode($footer);
+                echo '<script type="text/javascript">';
+                echo "document.write(converter.makeHtml($json_footer));</script>";
+            ?> 
         </div>
 </footer>
 
 <script>
-$(function() {
+    $(function() {
         $("#toc").tocify({ selectors: "h2, h3, h4, h5, h6" });
     });
 </script>
