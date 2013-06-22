@@ -10,8 +10,8 @@ Biography
 -   I earned an Associate's Degree in Liberal Arts from [Mercer County
     Community College](http://mccc.edu) where I graduated [quite
     early](http://www.mccc.edu/~humphrew/whatsnew/alumpauljones.htm).
--   I work as a Web Development Intern for 
-    [Local Wisdom Inc.](http://www.localwisdom.com),
+-   I work as a [Web Development Intern at 
+    Local Wisdom Inc.](http://www.localwisdom.com/blog/people/pjones/),
     where I develop apps in Objective-C for iOS and in C++.
 -   I am aggressively pursuing my Bachelor's with ambitions to
     continue my formal education.
