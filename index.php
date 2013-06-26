@@ -57,6 +57,10 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
         				    echo "<article class='span9'>";
         				    echo $page;
         				    echo '</article></div>';
+        				    
+        				    echo '<script type="text/javascript">';
+    				        echo 'var converter = new Markdown.Converter();';
+    				        echo '</script>';
         				}
     				    
 				    } else {
