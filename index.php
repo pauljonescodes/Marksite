@@ -9,7 +9,7 @@ $file = "";
 if (empty($_GET)) {
     $file = "./pages/index.md";
 } else {
-    $file = './pages' . $_GET['page'];
+    $file = './pages/' . $_GET['page'];
 }
 
 $pagename = ucwords(basename("./pages/" . $file, ".md"));

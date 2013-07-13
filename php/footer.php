@@ -11,7 +11,7 @@
 
 <script>
     $(function() {
-        $("#toc").tocify({ selectors: "h2, h3, h4, h5, h6" });
+        $("#toc").tocify({ selectors: "h2, h3" });
     });
 </script>
 

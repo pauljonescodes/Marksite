@@ -12,7 +12,7 @@ Biography
     early](http://www.mccc.edu/~humphrew/whatsnew/alumpauljones.htm).
 -   I work as a [Web Development Intern at 
     Local Wisdom Inc.](http://www.localwisdom.com/blog/people/pjones/),
-    where I develop apps in Objective-C for iOS and in C++.
+    where I develop in Objective-C and C++.
 -   I am aggressively pursuing my Bachelor's with ambitions to
     continue my formal education.
 

@@ -20,6 +20,14 @@ pre.prettyprint {
 border: 1px solid #000 !important;
 }
 
+article pre.prettyprint, 
+article .table, 
+article .table td, 
+article .table th {
+    border-color: #000 !important;
+}
+
+
 code.prettyprint {
 border: 0px solid #000 !important;
 }
