@@ -48,7 +48,6 @@ body, #content, #container {
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
 h1,h2,h3,h4,h5,h6 {
-   font: 1em "Palatino Linotype","Book Antiqua",Palatino,serif;
    color: #000; 
 }
 
@@ -70,9 +69,9 @@ border-left: 1px solid black;
 h1 { font-size: 250%; }
 h2 { font-size: 175%; }
 h3 { font-size: 135%; }
-h4 { font-size: 100%; font-variant: small-caps; }
+h4 { font-size: 100%; }
 h5 { font-size: 100%; }
-h6 { font-size: 90%; font-style: italic; }
+h6 { font-size: 90%;  }
 
 /* SECTION 5: Make hyperlinks more usable.
    Ensure links are underlined, and consider appending
