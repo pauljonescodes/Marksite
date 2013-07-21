@@ -15,6 +15,9 @@ if (empty($_GET)) {
 $pagename = ucwords(basename("./pages/" . $file, ".md"));
 $title = "";
 
+$pageurl =  urlencode('http://eden.rutgers.edu' . $_SERVER['REQUEST_URI']);
+$sharemessage = urlencode('I found these great notes!');
+
 include_once("./php/header.php"); 
 
 if ($pagename === 'Index') {
@@ -67,29 +70,36 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
 				        if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'md') { 
 				        echo '<div class="row-fluid">';
 				        echo "<article class='span9'>";
-    				        $page = file_get_contents($file);
-    				        $json_page = $json->encode($page);
-    				        echo '<script type="text/javascript">';
-    				        echo 'var converter = new Markdown.Converter();';
-    				        echo "document.write(converter.makeHtml($json_page));";
-    				        echo '</script>';
-    				        echo '</article>';
-    				    echo '<div class="span3 scrollable visible-desktop"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
+				        echo "<div class='share'>";
+				        echo "<ul>";
+                        echo "<li id='facebook'><a href='https://www.facebook.com/sharer.php?u=$pageurl&t=$sharemessage' title='Share on Facebook'><i class='icon-facebook'></i></a></li>";
+                        echo "<li id='twitter'><a href='http://twitter.com/intent/tweet?text=$sharemessage&url=$pageurl&via=PLJNS' title='Share on Twitter'><i class='icon-twitter'></i></a></li>";
+                        echo "<li id='googleplus'><a href='https://plus.google.com/share?url=$pageurl' title='Share on Google+'><i class='icon-google-plus'></i></a></li>";
+                        echo "</ul>";
+                        echo "</div>";
+				        $page = file_get_contents($file);
+				        $json_page = $json->encode($page);
+				        echo '<script type="text/javascript">';
+				        echo 'var converter = new Markdown.Converter();';
+				        echo "document.write(converter.makeHtml($json_page));";
+				        echo '</script>';
+				        echo '</article>';
+    				    echo '<div class="span3 scrollable visible-desktop" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';
     				    } else if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'html') { 
     				        echo file_get_contents($file);
     				    } else {
     				    echo '<div class="row-fluid">';
 				        echo "<article class='span9'>";
-    				        $page = file_get_contents('./pages/404.md');
-    				        $json_page = $json->encode($page);
-    				        echo '<script type="text/javascript">';
-    				        echo 'var converter = new Markdown.Converter();';
-    				        echo "document.write(converter.makeHtml($json_page));";
-    				        echo '</script>';
-    				        echo '</script>';
-    				        echo '</article>';
-    				        echo '<div class="span3 scrollable visible-desktop"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
+				        $page = file_get_contents('./pages/404.md');
+				        $json_page = $json->encode($page);
+				        echo '<script type="text/javascript">';
+				        echo 'var converter = new Markdown.Converter();';
+				        echo "document.write(converter.makeHtml($json_page));";
+				        echo '</script>';
+				        echo '</script>';
+				        echo '</article>';
+				        echo '<div class="span3 scrollable visible-desktop" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';
     				    } 
     				}

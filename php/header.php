@@ -42,3 +42,5 @@ I am aggressively pursuing my Bachelor's with ambitions to continue my formal ed
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch/icon-iphone-retina.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch/icon-ipad-retina.png" />
 <link rel="apple-touch-startup-image" href="img/startup.jpg">
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">

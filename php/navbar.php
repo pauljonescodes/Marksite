@@ -1,17 +1,17 @@
-	<div class="navbar" id="top">
-		<div class="navbar-inner">
-			
-			<a class="brand hidden-phone" href="?page=/index.md"><?php echo $sitename; ?></a>
-			<a class="brand visible-phone" href="?page=/index.md"><?php echo $short_sitename; ?></a>
-			
-			<button type="button" class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-            </button>
-            
-		    <div class="nav-collapse collapse">
-    		    <ul class="nav">
+<div class="navbar" id="top">
+	<div class="navbar-inner">
+		
+		<a class="brand hidden-phone" href="?page=/index.md"><?php echo $sitename; ?></a>
+		<a class="brand visible-phone" href="?page=/index.md"><?php echo $short_sitename; ?></a>
+		
+		<button type="button" class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
+    		<span class="icon-bar"></span>
+    		<span class="icon-bar"></span>
+    		<span class="icon-bar"></span>
+        </button>
+        
+	    <div class="nav-collapse collapse">
+		    <ul class="nav">
 
 <?php
 
@@ -33,17 +33,16 @@ if ($handle = opendir('./pages')) {
         }
     }
     
-    echo '<li><a href="http://www.pljns.com">Blog</a></li>';
-    
     closedir($handle);
 }
 
 ?>
 
-                    </ul>
-			    </div>
-			</div>
-		</div>
+                <li><a href="http://www.pljns.com">Blog</a></li>
+            </ul>
+	    </div>
+	</div>
+</div>
 		
 <?php
 
