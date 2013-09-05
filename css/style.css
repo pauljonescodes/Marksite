@@ -5,10 +5,6 @@ text-rendering: optimizeLegibility;
 background-color: #f7f7f7;
 }
 
-li {
- text-rendering: optimizeLegibility;   
-}
-
 /* table of contents */
 
 #toc a {
@@ -45,7 +41,6 @@ text-shadow: 0px 1px 0px black;
 top:0px;
 bottom:60px;
 }
-
 
 /* navbar */
 
@@ -105,6 +100,10 @@ border-radius: 0px;
 margin-left: 0px;
 }
 
+.dropdown-menu {
+background-color: rgba(255,255,255,0.95);
+}
+
 /* article */
 
 article {
@@ -149,55 +148,64 @@ text-shadow: 0px 1px 0px white;
 font-size: inherit;
 }
 
-article h1 small, article h2 small {
+article h1 small, 
+article h2 small, 
+article h4 small {
     font-weight: 300;
 }
 
 article h1 {
 margin-top: 5px;
 font-weight: 300;
-font-size:2.25em;
+font-size:2.5em;
 } article h2 {
 border-bottom: 1px solid #e3e3e3;
 -moz-box-shadow: 0px 1px 0px #f7f7f7; 
 -webkit-box-shadow: 0px 1px 0px #f7f7f7; 
 box-shadow: 0px 1px 0px #f7f7f7;
-font-size:1.75em;
+margin-bottom: 5px !important;
+font-size:2.0625em;
 font-weight: 300;
-margin-top: 15px;
-margin-bottom: 15px;
+padding-bottom: 8px;
+margin-bottom: 0px;
 } article h4 {
 font-weight:300;
-font-size: 1.10em;
-}
-article h3 {
-font-weight:400;
 font-size: 1.35em;
+} article h3 {
+font-size:1.55em;
+font-weight:400;
+margin-top: 16px !important;
 } article h5 {
-font-size:1.05em;
+font-size: 1.10em;
 font-weight:400;
 } article h6 {
 font-size:1em;
+font-size:1.05em;
 font-weight:300;
+}
+
+article h1 code,
+article h2 code,
+article h3 code,
+article h4 code,
+article h5 code,
+article h6 code {
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 article p, 
 article li {
 text-shadow: 0px 1px 0px white;
-
-}
-
-article strong {
-font-weight: 400;
+font-size: 17.25px;
 }
 
 article p {
 text-align: justify;
-font-size:16px;
 line-height: 1.375;
 }
 
-article a, #toc:hover a {
+article a {
 text-shadow: 0px 1px 0px white;
 -webkit-transition:color .2s ease-in-out;
 -moz-transition: color .2s ease-in-out;
@@ -225,13 +233,12 @@ margin: 0px;
 }
 
 article li {
-font-size: 16px;
 line-height: 1.425em;
 }
 
 article code, 
 article pre.prettyprint {
-font-size:15px;
+font-size:18px;
 border-color: #e3e3e3 !important;
 background-color: #f1f1f1 !important;
 overflow: auto;
@@ -251,6 +258,7 @@ background-color: inherit !important;
 -moz-border-radius: 0px;
 border-radius: 0px;
 border: 0;
+line-height: 1.35;
 }
 
 article pre.prettyprint {
@@ -324,15 +332,14 @@ list-style-type: none;
 text-align: center;
 }
 
-
 article .share ul li {
-    display: inline;
+    line-height: 30px;
 }
 
 article .share ul li a {
     color:#a0a9b0;
     padding-left: 10px;
-    padding-right: 9px;
+    margin-right: -19px;
     padding-top: 2px;
 }
 
@@ -344,6 +351,7 @@ article .share ul {
     display: block;
     float: right;
     padding-left: -9px;
+    margin-top: -5px;
 }
 
 #facebook a:hover {

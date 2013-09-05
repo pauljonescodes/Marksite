@@ -7,6 +7,9 @@ article {
 	border: 0px;
 }
 
+article .share {
+    display: none;
+}
 
 #toc {
 	display: none;
@@ -61,6 +64,9 @@ border-bottom: 0;
 border-top: 0;
 border-right: 0;
 border-left: 1px solid black;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
 }
 
 /* SECTION 4: Set heading font face, sizes, and color.
