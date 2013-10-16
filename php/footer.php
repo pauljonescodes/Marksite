@@ -1,13 +1,15 @@
-<footer class="navbar navbar-inverse">
+
+<nav class="navbar navbar-default" role="navigation">
 		<div class="navbar-inner">
-            <?php     	
-                $footer = file_get_contents("./pages/footer.md");
-                $json_footer = $json->encode($footer);
-                echo '<script type="text/javascript">';
-                echo "document.write(converter.makeHtml($json_footer));</script>";
-            ?> 
+            <ul class="nav navbar-nav">
+<li><a href="https://github.com/pljns/Rutgers-University-Notes">Source</a></li>
+<li><a href="?page=%2FNotes%2FLICENSE.md">License</a></li>
+<li><a href="https://github.com/pljns/Marksite">Marksite</a></li>
+<li><a href="http://PLJNS.com">My homepage</a></li>
+</ul>
         </div>
-</footer>
+</nav>
+
 
 <script>
     $(function() {
@@ -29,8 +31,7 @@
 </script>
 
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-<script src="js/vendor/bootstrap.js" type="text/javascript"></script>
-<script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <script type="text/x-mathjax-config">

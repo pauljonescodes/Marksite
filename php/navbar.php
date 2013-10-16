@@ -1,17 +1,17 @@
-<div class="navbar" id="top">
-	<div class="navbar-inner">
-		
-		<a class="brand hidden-phone" href="?page=/index.md"><?php echo $sitename; ?></a>
-		<a class="brand visible-phone" href="?page=/index.md"><?php echo $short_sitename; ?></a>
-		
-		<button type="button" class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
-    		<span class="icon-bar"></span>
-    		<span class="icon-bar"></span>
-    		<span class="icon-bar"></span>
-        </button>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="http://eden.rutgers.edu/~pmj34"><?php echo $sitename; ?></a>
+  </div>
         
-	    <div class="nav-collapse collapse">
-		    <ul class="nav">
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
 
 <?php
 
@@ -21,7 +21,7 @@ if ($handle = opendir('./pages')) {
             if (is_dir("./pages/" . $entry)) {
                 echo '<li class="dropdown">';
                 echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' . $entry . '<b class="caret"></b></a>';
-                echo '<ul class="dropdown-menu">';
+                echo '<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">';
                 
                 print_nav_bar('./pages/' . $entry . '/');
                 
@@ -38,11 +38,10 @@ if ($handle = opendir('./pages')) {
 
 ?>
 
-                <li><a href="http://www.pljns.com">Blog</a></li>
+                <li><a href="http://www.pljns.com/blog">Blog</a></li>
             </ul>
-	    </div>
-	</div>
-</div>
+  </div><!-- /.navbar-collapse -->
+</nav>
 		
 <?php
 
@@ -51,7 +50,7 @@ function print_nav_bar($file_name) {
 		while (false !== ($current_entry = readdir($file_handle))) { /* while there are entries */
         	if ($current_entry[0] != '.' && !in_array($current_entry, $dont_want) && $current_entry != "LICENSE.md" && $current_entry != "Readme.md") { /* that don't equal this stuff */
         		if (is_dir($file_name . $current_entry)) { /* perform this if it's a directory */
-        			echo '<li class="dropdown-submenu">';
+        			echo '<li class="dropdown-submenu" role="presentation">';
                     echo '<a tabindex="-1" href="?page=' . rawurlencode(substr($file_name, 7) . '/' .$current_entry) . '">' . $current_entry . '</a>';
                     echo '<ul class="dropdown-menu">';
         			echo print_nav_bar($file_name . $current_entry . '/');

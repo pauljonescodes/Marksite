@@ -28,10 +28,7 @@ I am aggressively pursuing my Bachelor's with ambitions to continue my formal ed
 <script src="js/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery.tocify.js"></script>
 
-<link href="css/main.css" type="text/css" rel="stylesheet">
-<link href="css/bootstrap.min.css" type = "text/css" rel="stylesheet">
-<link href="css/bootstrap-responsive.min.css" type = "text/css" rel="stylesheet">
-<link href="css/normalize.css" type="text/css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/jquery.tocify.css" type="text/css" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
@@ -42,5 +39,3 @@ I am aggressively pursuing my Bachelor's with ambitions to continue my formal ed
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch/icon-iphone-retina.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch/icon-ipad-retina.png" />
 <link rel="apple-touch-startup-image" href="img/startup.jpg">
-
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">

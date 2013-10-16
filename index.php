@@ -38,7 +38,7 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
 <?php include_once("./php/navbar.php"); ?>
 
 <div id="wrap">
-	<div class="container-fluid">
+	<div class="container">
 				<?php 
 				
 				    if (is_dir($file)) {
@@ -68,15 +68,8 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
     				    
 				    } else {
 				        if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'md') { 
-				        echo '<div class="row-fluid">';
-				        echo "<article class='span9'>";
-				        echo "<div class='share'>";
-				        echo "<ul>";
-                        echo "<li id='facebook'><a href='https://www.facebook.com/sharer.php?u=$pageurl&t=$sharemessage' title='Share on Facebook'><i class='icon-facebook'></i></a></li>";
-                        echo "<li id='twitter'><a href='http://twitter.com/intent/tweet?text=$sharemessage&url=$pageurl&via=PLJNS' title='Share on Twitter'><i class='icon-twitter'></i></a></li>";
-                        echo "<li id='googleplus'><a href='https://plus.google.com/share?url=$pageurl' title='Share on Google+'><i class='icon-google-plus'></i></a></li>";
-                        echo "</ul>";
-                        echo "</div>";
+				        echo '<div class="row">';
+				        echo "<article class='col-xs-12 col-sm-9 col-md-9'>";
 				        $page = file_get_contents($file);
 				        $json_page = $json->encode($page);
 				        echo '<script type="text/javascript">';
@@ -84,7 +77,7 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
 				        echo "document.write(converter.makeHtml($json_page));";
 				        echo '</script>';
 				        echo '</article>';
-    				    echo '<div class="span3 scrollable visible-desktop" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
+    				    echo '<div class="col-xs-6 col-sm-3 col-md-3 scrollable visible-desktop" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';
     				    } else if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'html') { 
     				        echo file_get_contents($file);
