@@ -19,6 +19,7 @@ $pageurl =  urlencode('http://eden.rutgers.edu' . $_SERVER['REQUEST_URI']);
 $sharemessage = urlencode('I found these great notes!');
 
 include_once("./php/header.php"); 
+include_once("./php/markdown.php");
 
 if ($pagename === 'Index') {
 	$title = $sitename;
@@ -36,6 +37,7 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
 <body>
 
 <?php include_once("./php/navbar.php"); ?>
+
 
 <div id="wrap">
 	<div class="container">
@@ -69,28 +71,31 @@ $dont_want = array('.', '..', 'index.md', 'LICENSE.md', 'Readme.md', '404.md', '
 				    } else {
 				        if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'md') { 
 				        echo '<div class="row">';
-				        echo "<article class='col-xs-12 col-sm-9 col-md-9'>";
+				        echo "<article class='col-md-9'>";
 				        $page = file_get_contents($file);
 				        $json_page = $json->encode($page);
-				        echo '<script type="text/javascript">';
-				        echo 'var converter = new Markdown.Converter();';
-				        echo "document.write(converter.makeHtml($json_page));";
-				        echo '</script>';
+				       // echo '<script type="text/javascript">';
+				       // echo 'var converter = new Markdown.Converter();';
+				       // echo "document.write(converter.makeHtml($json_page));";
+				       // echo '</script>';
+						echo Markdown($page);
 				        echo '</article>';
-    				    echo '<div class="col-xs-6 col-sm-3 col-md-3 scrollable visible-desktop" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
+    				    echo '<div class="col-md-3 scrollable visible-md visible-lg" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';
     				    } else if (file_exists($file) && pathinfo($file, PATHINFO_EXTENSION) == 'html') { 
     				        echo file_get_contents($file);
     				    } else {
     				    echo '<div class="row-fluid">';
 				        echo "<article class='span9'>";
+
 				        $page = file_get_contents('./pages/404.md');
 				        $json_page = $json->encode($page);
-				        echo '<script type="text/javascript">';
-				        echo 'var converter = new Markdown.Converter();';
-				        echo "document.write(converter.makeHtml($json_page));";
-				        echo '</script>';
-				        echo '</script>';
+				       // echo '<script type="text/javascript">';
+				       // echo 'var converter = new Markdown.Converter();';
+				       // echo "document.write(converter.makeHtml($json_page));";
+				       // echo '</script>';
+				       // echo '</script>';
+						echo MarkdownExtra::defaultTransform($json_page);
 				        echo '</article>';
 				        echo '<div class="span3 scrollable visible-desktop" id="tocContainer"><div id="toc" data-spy="affix" data-offset-top="60"></div></div>';
     				    echo '</div>';

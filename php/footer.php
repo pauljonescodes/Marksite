@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" id="bottom">
 		<div class="navbar-inner">
             <ul class="nav navbar-nav">
 <li><a href="https://github.com/pljns/Rutgers-University-Notes">Source</a></li>

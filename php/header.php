@@ -23,7 +23,6 @@ I am aggressively pursuing my Bachelor's with ambitions to continue my formal ed
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
-<script src="js/vendor/Markdown.Converter.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
 <script src="js/vendor/jquery.tocify.js"></script>
@@ -32,6 +31,7 @@ I am aggressively pursuing my Bachelor's with ambitions to continue my formal ed
 <link href="css/jquery.tocify.css" type="text/css" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <link href="css/print.css" rel="stylesheet" type="text/css" media="print" >
+<link href="css/scale.css" rel="stylesheet" type="text/css" >
 
 <link rel="shortcut icon" href="http://eden.rutgers.edu/~pmj34/img/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="img/apple-touch/icon.png" />
