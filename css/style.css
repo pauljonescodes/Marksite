@@ -16,12 +16,32 @@ dt {
 	margin:0 0 0 160px;
   }
 
+dd:last-child {
+border-bottom: 1px solid #ddd;
+}
+
 dd+dt+dd {
-border-top: 2px solid #ddd;
+border-top: 1px solid #ddd;
 }
 
 dd+dt {
-	border-top: 2px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+@media(max-width:768px){
+
+	.deflist-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border: 1px solid #ddd
+    }
+
+    .deflist-responsive>.table {
+        margin-bottom: 0;
+    }
+
 }
 
 dd {
