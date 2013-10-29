@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   }
 
-p, ul, ol, dl, blockquote, .content img {
+p, ul, ol, blockquote, .content img {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;

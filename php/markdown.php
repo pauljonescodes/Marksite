@@ -2746,7 +2746,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 		$attr       = array_pad($attr, $col_count, '');
 		
 		# Write column headers.
-		$text = "<table>\n";
+		$text = "<div class='table-responsive'><table class='table'>\n";
 		$text .= "<thead>\n";
 		$text .= "<tr>\n";
 		foreach ($headers as $n => $header)
@@ -2773,7 +2773,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 			$text .= "</tr>\n";
 		}
 		$text .= "</tbody>\n";
-		$text .= "</table>";
+		$text .= "</table></div>";
 		
 		return $this->hashBlock($text) . "\n";
 	}
