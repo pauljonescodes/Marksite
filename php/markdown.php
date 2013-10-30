@@ -2828,7 +2828,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 		# Turn double returns into triple returns, so that we can make a
 		# paragraph for the last item in a list, if necessary:
 		$result = trim($this->processDefListItems($list));
-		$result = "<dl>\n" . $result . "\n</dl>";
+		$result = "<div class='deflist-responsive'><dl>\n" . $result . "\n</dl></div>";
 		return $this->hashBlock($result) . "\n\n";
 	}
 

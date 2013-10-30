@@ -3,6 +3,12 @@ height: 100%;
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
 }
+
+pre {
+margin-top: 10px !important;
+margin-bottom: 10px !important;
+}
+
 dt {
     float: left;
     clear: right;
@@ -32,15 +38,20 @@ dd+dt {
 
 	.deflist-responsive {
         width: 100%;
+		min-width:320px;
         margin-bottom: 15px;
         overflow-x: scroll;
         overflow-y: hidden;
         border: 1px solid #ddd
     }
 
-    .deflist-responsive>.table {
+    .deflist-responsive>dl {
         margin-bottom: 0;
     }
+
+	.deflist-responsive dt {
+		padding: 0px 0px 0px 0px;
+	}
 
 }
 
